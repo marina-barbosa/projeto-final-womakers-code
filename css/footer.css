@@ -1,0 +1,32 @@
+
+
+
+/* FOOTER */
+
+.footer-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;    
+    background-color: var(--amarelo-claro);
+    color: #222;
+    list-style-type: none;
+    padding: 20px;        
+}
+
+.footer-content a{
+    color: var(--laranja);
+}
+
+.footer-content ul {
+    padding: 15px;;
+}
+
+.footer-content ul li {
+    display: inline;
+    margin: 10px;        
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+

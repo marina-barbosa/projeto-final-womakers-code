@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Arial', sans-serif; 
+    line-height: 1.5;   
+    letter-spacing: 1px; 
+    text-decoration: none;     
+}
+
+:root {     
+    --magenta: #ef3353; 
+    --magenta-c: #ee6077; 
+    --laranja: #f17144; 
+    --amarelo: #f4b036; 
+    --amarelo-claro: #FDF5E6;
+}
+
+
+/* FORMATAÇÃO DE TEXTO */
+
+h2 {
+    padding: 20px;
+}
+
+section p {
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
+}
+
+.dash {
+    display: flex;
+    align-items: center;
+}
+
+.dash h2 {
+    margin: 0;
+    align-items: left;
+}
+
+.dash::after {
+    content: "";
+    height: 3px;
+    width: 50px; 
+    background-color:var(--magenta);
+    margin-left: 10px; 
+}
+
+
+
+/* SECTIONS */
+
+
+section {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section:nth-child(odd) {
+    background-color: var(--amarelo-claro);
+}
+
+#section1 {
+    background-image: url(../resources/barbara.png); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    align-items: end;
+}
+
+
+#section1 p {     
+    color: var(--amarelo-claro); 
+    font-style: italic; 
+    margin-bottom: 20%;  
+}
+
+#section2, #section3, #section4, #section5 {
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#section3 {
+    background-color: var(--laranja);   
+} 
+#section5 {
+    background-color: var(--amarelo);    
+} 
+
+
+
+.div-section {
+    display:block;
+    width: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

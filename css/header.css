@@ -1,0 +1,63 @@
+
+
+/* HEADER E NAV */
+
+.sticky-header {
+    background-color: rgba(34, 34, 34, 0.1);
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+    border-bottom: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+    list-style: none; 
+    font-size: medium;   
+    position: fixed; 
+    transition: background-color 0.3s;
+} 
+
+
+.sticky-header.scrolled {
+    background-color: var(--amarelo-claro); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
+    border-bottom: 1px solid #222; 
+}
+
+.header-left img {
+    height: 50px;
+    margin-top: 9px;
+}
+
+.header-middle {
+    margin-left: 53%;
+}
+
+.header-middle li {
+    display: inline;
+    margin-right: 50px;    
+}
+
+.header-middle a {    
+    color: #222;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-middle nav a:hover {           
+    color:var(--amarelo); 
+}
+
+.header-right button {
+    padding: 10px 10px;        
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 50%;
+    background-color: var(--amarelo);
+}
+
