@@ -2,26 +2,23 @@
 
 /* HEADER E NAV */
 
+header {
+    width: 100%;
+}
+
 .sticky-header {
     background-color: rgba(34, 34, 34, 0.1);
     background-color: transparent;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
     border-bottom: 1px solid transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0;    
     width: 100%;
-    padding: 10px 20px;
-    z-index: 1000;
-    list-style: none; 
-    font-size: medium;   
+    padding: 10px;
+    z-index: 10;
+    list-style: none;       
     position: fixed; 
     transition: background-color 0.3s;
 } 
-
 
 .sticky-header.scrolled {
     background-color: var(--amarelo-claro); 
@@ -29,35 +26,75 @@
     border-bottom: 1px solid #222; 
 }
 
-.header-left img {
+.header-logo {
+    margin-left: 2%;
+}
+
+.header-logo img {
     height: 50px;
-    margin-top: 9px;
+    margin-top: 9px;          
 }
 
-.header-middle {
-    margin-left: 53%;
-}
 
-.header-middle li {
-    display: inline;
-    margin-right: 50px;    
-}
 
-.header-middle a {    
+.header-nav a {    
     color: #222;
     font-weight: bold;
     transition: color 0.3s;
 }
 
-.header-middle nav a:hover {           
+.header-nav nav a:hover {           
     color:var(--amarelo); 
 }
 
-.header-right button {
+#changeColorButton {
     padding: 10px 10px;        
-    cursor: pointer;
-    margin-right: 30px;
+    cursor: pointer;    
     border-radius: 50%;
-    background-color: var(--amarelo);
+    background-color: var(--amarelo);    
 }
 
+
+@media screen and (max-width: 825px) { /* pra cel */
+    .sticky-header {         
+        text-align: center;         
+    } 
+
+    .header-nav nav a{
+        margin-right: 10px;                 
+    }
+    .header-nav nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+    
+}
+  
+
+@media screen and (min-width: 826px) { /* pra notebook */
+    .sticky-header {
+        display: flex; 
+        justify-content: space-between;      
+        align-items: center;
+        font-size: medium; 
+       }
+
+       .header-nav {  
+        position: relative;
+        right: 1%;  
+        margin-right: 2%;    
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+       .header-nav nav a{
+        margin-right: 30px;
+        display: inline-block;          
+    }
+}
+
+  

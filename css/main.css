@@ -7,7 +7,8 @@
     font-family: 'Inter', 'Arial', sans-serif; 
     line-height: 1.5;   
     letter-spacing: 1px; 
-    text-decoration: none;     
+    text-decoration: none;  
+       
 }
 
 :root {     
@@ -17,6 +18,8 @@
     --amarelo: #f4b036; 
     --amarelo-claro: #FDF5E6;
 }
+
+
 
 
 /* FORMATAÇÃO DE TEXTO */
@@ -55,7 +58,7 @@ section p {
 
 section {
     height: 100vh;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -69,8 +72,9 @@ section:nth-child(odd) {
     background-image: url(../resources/barbara.png); 
     background-repeat: no-repeat; 
     background-size: cover; 
-    background-attachment: fixed; 
+    background-attachment: fixed;
     align-items: end;
+    background-position: center center;
 }
 
 
@@ -99,10 +103,53 @@ section:nth-child(odd) {
 
 
 
-.div-section {
-    display:block;
-    width: 60%;
+
+
+
+@media screen and (max-width: 767px) { /* pra cel */
+    body {
+        font-size: 14px;
+      }
+
+    .div-section {
+        display:block;
+        width: 90%;
+    } 
+    
+    
+    
 }
+  
+
+@media screen and (min-width: 768px) and (max-width: 1650px) { /* pra notebook */
+    body {
+        font-size: 16px;
+      }
+
+    .div-section {
+        display:block;
+        width: 80%;
+    } 
+    
+    
+    
+}
+
+  
+@media screen and (min-width: 1651px) { /* monitor desktop */
+    body {
+        font-size: 18px;
+      }
+
+    .div-section {
+        display:block;
+        width: 70%;
+    }
+
+    
+   
+}
+  
 
 
 

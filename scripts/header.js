@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var header = document.querySelector('.sticky-header');
         header.classList.toggle('scrolled', window.scrollY > 0);
 
-        var middleLinks = document.querySelectorAll('.header-middle a');
+        var middleLinks = document.querySelectorAll('.header-nav a');
         middleLinks.forEach(function (link) {
             link.classList.toggle('scrolled', window.scrollY > 0);
         });

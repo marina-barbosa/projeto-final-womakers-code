@@ -1,42 +1,91 @@
-
-
-
-.img-container:nth-child(even) {
-    float: left; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;    
+@media screen and (max-width: 767px) { /* pra cel */
+    .img-container img {
+        justify-content: center;
+        width: 100%;
+    } 
+    
 }
-.img-container:nth-child(odd) {
-    float: right; 
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;     
+  
+
+@media screen and (min-width: 768px) and (max-width: 1650px) { /* pra notebook */
+
+    .img-container {        
+        max-width: 100%;    
+    }
+
+    .img-container img {
+        justify-content: center;
+    }   
+    
 }
 
-#section4 .img-container {
-    float:none;
+
+
+@media screen and (min-width: 1651px) { /* monitor desktop */
+    body {
+        font-size: 18px;
+      }
+
+    .div-section {
+        display:block;
+        width: 70%;
+    }
+
+    .float-left {
+        float: left; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-right: 40px;
+        max-width: 50%;    
+    }
+    .float-right {
+        float: right; 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 40px; 
+        max-width: 50%;    
+    }
+
+    .img-container {
+        justify-content: center;            
+    }
+
+    #section4 .img-container img{
+        max-width: 100%;    
+    }
+   
 }
+
+
+
+#section4 .img-container img{
+    max-width: 100%;    
+}
+
+figcaption {
+    font-style: italic;     
+}
+
 
 /* EFEITO IMG */
 
-.img-container:nth-child(even)  {
+.float-left  {
     opacity: 0;
     transform: translateX(-50px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
-.img-container:nth-child(even).visible {
+.float-left.visible {
     opacity: 1;
     transform: translateX(0);
 }
-.img-container:nth-child(odd) {
+.float-right {
     opacity: 0;
     transform: translateX(50px);
     transition: opacity 1.5s ease, transform 1.5s ease;
 }
 
-.img-container:nth-child(odd).visible {
+.float-right.visible {
     opacity: 1;
     transform: translateX(0);
 }

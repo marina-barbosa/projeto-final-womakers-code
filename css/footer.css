@@ -2,31 +2,65 @@
 
 
 /* FOOTER */
-
-.footer-content {
+footer {
     width: 100%;
-    margin: 0 auto;
-    text-align: center;    
+}
+
+
+@media screen and (max-width: 767px) { /* pra cel */
+    .footer-content {
+        justify-content: space-between;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1650px) { /* pra notebook */ 
+    #copyright {
+        margin-right: 24%;              
+    }
+    
+    .icons {
+        margin-right: 10%;
+    }
+
+    .footer-content {
+        justify-content: end;
+    }
+    
+}
+
+
+@media screen and (min-width: 1651px) { /* monitor desktop */
+    #copyright {
+        margin-right: 24%;             
+    }
+
+    .footer-content {
+        justify-content: end;
+    }
+   
+}
+
+.footer-content {  
+    display: flex;     
+    align-items: center;              
+    width: 100%;
     background-color: var(--amarelo-claro);
     color: #222;
     list-style-type: none;
-    padding: 20px;        
+    padding: 20px;
 }
 
-.footer-content a{
+.icons a {
     color: var(--laranja);
+    margin-right: 10px;
 }
 
-.footer-content ul {
-    padding: 15px;;
-}
 
-.footer-content ul li {
-    display: inline;
-    margin: 10px;        
-}
 
-.footer-content a:hover {
-    text-decoration: underline;
-}
+
+
+
+
+
 
