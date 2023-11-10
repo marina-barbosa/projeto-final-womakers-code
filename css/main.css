@@ -62,6 +62,7 @@ section {
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 section:nth-child(odd) {
@@ -100,6 +101,11 @@ section:nth-child(odd) {
 #section5 {
     background-color: var(--amarelo);    
 } 
+
+
+audio {
+    margin-top: 5%;;
+}
 
 
 
@@ -144,11 +150,11 @@ section:nth-child(odd) {
     .div-section {
         display:block;
         width: 70%;
-    }
-
-    
+    }   
    
 }
+
+
   
 
 
