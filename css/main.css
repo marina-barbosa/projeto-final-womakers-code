@@ -107,37 +107,27 @@ audio {
     margin-top: 5%;;
 }
 
-
-
-
-
-
 @media screen and (max-width: 767px) { /* pra cel */
     body {
         font-size: 14px;
-      }
+    }
 
     .div-section {
         display:block;
         width: 90%;
     } 
-    
-    
-    
 }
   
 
 @media screen and (min-width: 768px) and (max-width: 1650px) { /* pra notebook */
     body {
         font-size: 16px;
-      }
+    }
 
     .div-section {
         display:block;
         width: 80%;
     } 
-    
-    
     
 }
 
@@ -145,7 +135,7 @@ audio {
 @media screen and (min-width: 1651px) { /* monitor desktop */
     body {
         font-size: 18px;
-      }
+    }
 
     .div-section {
         display:block;
