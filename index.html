@@ -19,22 +19,24 @@
 
     <header class="sticky-header">
 
-        <div class="header-logo">
-            <a href="#section1">
-                <img src="resources/logo.png" alt="Logo">
-            </a>
-        </div>
+        <a class="logo" href="#section1">
+            <img src="resources/logo.png" alt="Logo">
+        </a>
 
-        <div class="header-nav">
-            <nav>
-                <a href="#section2">Biografia</a>
-                <a href="#section3">Contribuições</a>
-                <a href="#section4">Curiosidades</a>
-                <a href="#section5">Referências</a>
-                <button id="changeColorButton"></button>
-            </nav>
+        <nav id="nav">
 
-        </div>
+            <!-- <button id="btn-burguer"></button> -->
+            <span id="btn-burguer"></span>
+
+            <ul id="menu">
+                <li><a href="#section2">Biografia</a></li>
+                <li><a href="#section3">Contribuições</a></li>
+                <li><a href="#section4">Curiosidades</a></li>
+                <li><a href="#section5">Referências</a></li>
+                <li><a href="#">Fotos</a></li>
+                <li><button id="toggleColor"></button></li>
+            </ul>
+        </nav>
 
     </header>
 
@@ -580,6 +582,7 @@
     </footer>
 
     <script src="scripts/header.js"></script>
+    <script src="scripts/btn-burguer.js"></script>
     <script src="scripts/img-transition.js"></script>
     <script src="scripts/dark-theme.js"></script>
 

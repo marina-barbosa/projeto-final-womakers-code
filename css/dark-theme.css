@@ -1,25 +1,26 @@
 
 
-.dark-theme {
-    background-color: #222;
+.dark-theme {    
     color: var(--amarelo-claro);
 }
 
 .dark-theme .sticky-header.scrolled {
     background: linear-gradient(to right, #333 0%, #555 40%,  #555 60%, #333 100%);    
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);   
-    border-bottom: 1px solid #222; 
+    border-bottom: 1px solid #222;     
 }
 
-.dark-theme .sticky-header a.scrolled {
-    color: var(--amarelo-claro);
+
+@media screen and (max-width: 825px) {
+    .dark-theme #menu {
+        background: linear-gradient(to right, #333 0%, #555 40%,  #555 60%, #333 100%);
+    }
+
 }
 
-.dark-theme .sticky-header a:hover.scrolled {
-    color: var(--amarelo);
-}
 
-.dark-theme .header-right button {
+
+.dark-theme #toggleColor {
     background-color: #888;
 }
 

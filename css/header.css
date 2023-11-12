@@ -13,11 +13,14 @@ header {
     border-bottom: 1px solid transparent;
     top: 0;    
     width: 100%;
-    padding: 10px;
-    z-index: 10;
-    list-style: none;       
+    padding: 10px 50px 10px 20px;
+    z-index: 10;    
     position: fixed; 
-    transition: background-color 0.3s;
+    transition: background-color 0.3s;    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
 } 
 
 .sticky-header.scrolled {
@@ -26,75 +29,113 @@ header {
     border-bottom: 1px solid #222; 
 }
 
-.header-logo {
-    margin-left: 2%;
-}
-
-.header-logo img {
-    height: 50px;
-    margin-top: 9px;          
-}
-
-
-
-.header-nav a {    
-    color: #222;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.header-nav nav a:hover {           
-    color:var(--amarelo); 
-}
-
-#changeColorButton {
+#toggleColor {
     padding: 10px 10px;        
     cursor: pointer;    
     border-radius: 50%;
     background-color: var(--amarelo);    
 }
 
+#menu {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
 
-@media screen and (max-width: 825px) { /* pra cel */
-    .sticky-header {         
-        text-align: center;         
-    } 
+li {
+    display: flex;
+    align-items: center;
+}
 
-    .header-nav nav a{
-        margin-right: 10px;                 
+li a {    
+    color: #222;   
+    transition: color 0.3s;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    padding: 0.5rem;
+}
+
+li a:hover {           
+    color:var(--amarelo); 
+}
+
+.logo img {
+    height: 50px; 
+    margin-top: 5px;   
+}
+
+#btn-burguer {
+    width: 20px; 
+    border-top: 2px solid;       
+    cursor: pointer; 
+    display: none;     
+}
+
+#btn-burguer::after, #btn-burguer::before {
+    content: '';
+    display: block;
+    width: 20px; 
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+
+#nav.active #btn-burguer {
+    border-top-color: transparent;
+}
+
+#nav.active #btn-burguer::before {
+    transform: rotate(135deg);
+}
+
+#nav.active #btn-burguer::after {
+    border-top-color: transparent;
+    transform: rotate(-135deg);
+    top: -7px;
+}
+
+
+@media screen and (max-width: 825px) {  /*pra cel*/  
+    
+    .sticky-header{
+        padding-right: 20px;
     }
-    .header-nav nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }    
+    
+    #btn-burguer {             
+        display: block;
+    }
+    #menu {
+        display: block;                
+        position: absolute;
+        width: 100%;
+        height: 0px;
+        transition: 0.6s;
+        top: 76px;        
+        left: 0;        
+        background: var(--amarelo-claro);
+        z-index: 2000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    
+    #nav.active #menu {        
+        height: 63vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    #menu a, #toggleColor {        
+        margin: 1rem auto;
+    }
     
 }
-  
 
-@media screen and (min-width: 826px) { /* pra notebook */
-    .sticky-header {
-        display: flex; 
-        justify-content: space-between;      
-        align-items: center;
-        font-size: medium; 
-       }
 
-       .header-nav {  
-        position: relative;
-        right: 1%;  
-        margin-right: 2%;    
-    }
 
-    nav {
-        display: flex;
-        align-items: center;
-    }
 
-       .header-nav nav a{
-        margin-right: 30px;
-        display: inline-block;          
-    }
-}
 
   
