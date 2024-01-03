@@ -17,8 +17,17 @@ Este projeto consiste em uma página web estática que apresenta informações s
 O repositório está organizado da seguinte forma:
 
 - index.html: Página principal que exibe a biografia da Dra. Barbara McClintock.
-- styles.css: Arquivo CSS para estilizar a página.
-- script.js: Arquivo JavaScript para funcionalidades interativas, se aplicável.
+- CSS/: Arquivos CSS para estilizar a página:
+   	- dark-themes.css
+  	- footer.css
+  	- header.css
+  	- img-transition.css
+  	- main.css
+- scripts/: Arquivos JavaScript para funcionalidades interativas:
+  - btn-burguer.js
+  - dark-theme.js
+  - header.js
+  - img-transition.js
 
 # Instalação
 Como este projeto é uma página web estática, não é necessária nenhuma instalação. Basta clonar ou fazer o download do repositório e abrir o arquivo index.html em um navegador web.
