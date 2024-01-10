@@ -5,6 +5,11 @@ deploy -> https://marina-barbosa.github.io/projeto-final-womakers-code/
 # Biografia Dra. Barbara McClintock
 Este é um projeto desenvolvido como parte da conclusão do curso de programação web para iniciantes oferecido pela WomakersCode. O objetivo era criar uma página biográfica sobre uma mulher que contribuiu significativamente para a tecnologia. Neste caso, a página é dedicada à geneticista Dra. Barbara McClintock.
 
+<div align='center'>  
+
+![GIF](https://github.com/marina-barbosa/projeto-final-womakers-code/blob/master/resources/Captura%20de%20tela%202024-01-10%20085714.png) 
+</div>
+
 # Visão Geral
 Este projeto consiste em uma página web estática que apresenta informações sobre a vida e as contribuições da Dra. Barbara McClintock. Utiliza HTML, CSS e JavaScript para criar uma interface simples e interativa para os usuários aprenderem sobre essa renomada cientista.
 
